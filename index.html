@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Scada&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	
+	<div class="wrapper">
+		<div class="shaft-size">
+			Размер вала:
+			<select onclick="calculator.selectShaftOption()">
+				<option value="" hidden="hidden"></option>
+				<option value="21">21</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+			</select>
+		</div>
+		<div class="admission-size">
+			Класс допуска:
+			<select onclick="calculator.selectAdmissionOption()">
+			</select>
+		</div>
+		<div class="button">
+			<a href="#" onclick="calculator.pressButton()">Рассчитать</a>
+		</div>
+		<div class="result">
+			<span class="dmin">d<sub>min</sub> = </span>
+			<span class="dmax">d<sub>max</sub> = </span> 
+		</div>
+	</div>
+<script src="arrayOfObjects.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

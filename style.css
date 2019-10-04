@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Scada', sans-serif;
+}
+
+.wrapper {
+	margin: 10px;
+	border: 1px solid rgba(1, 1, 1, .2);
+	width: 200px;
+	padding: 10px;
+}
+
+.shaft-size, .admission-size {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	border-bottom: 1px solid rgba(1, 1, 1, .2);
+}
+
+.button {
+	padding-bottom: 10px;
+}
+
+.button a {
+	text-decoration: none;
+	color: #333;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+	background: #fff;
+	border: 1px solid rgba(51, 51, 51);
+	padding: 10px;
+	font-size: 18px;
+	transition: background 0.16s linear;
+}
+
+.button a:hover {
+	background: #333;
+	color: #fff;
+	transition: background 0.16s linear;
+}
+
+.result {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
